@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f6f0ea, #f3e7de, #ece1d4);
+  color: #4a3b32;
+  line-height: 1.8;
+  text-align: center;
+}
+
+header, footer {
+  background: #a27b5c;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 18px 0;
+  z-index: 10;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  font-family: 'Playfair Display', serif;
+}
+
+nav a:hover,
+.active-page {
+  background: #7c5a3c;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+}
+
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 35px 30px;
+  background: #fffaf5;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.8s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(151, 117, 50, 0.18);
+}
+
+h1, h2 {
+  color: #6a4e3c;
+  margin-bottom: 18px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+p, li {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin: 12px 0 25px 25px;
+  text-align: left;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 18px;
+  background: #7c5a3c;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 1.05rem;
+  transition: 0.3s ease-in-out;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-button:hover {
+  background: #5c402d;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+}
+
+footer {
+  padding: 18px 0;
+  margin-top: 35px;
+  font-size: 1rem;
+  background: #a27b5c;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
